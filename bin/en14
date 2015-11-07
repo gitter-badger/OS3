@@ -1,0 +1,8 @@
+#!/bin/bash
+trap 'echo ==== I am trapped ====' SIGINT SIGTERM
+x=1
+while true # infinite loop!
+do
+echo "${x}-th loop!!"
+x=`expr ${x} + 1`
+done
